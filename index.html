@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的官网</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <section>
+        <!-- 顶部轮播，导航 -->
+        <div class="headerBox">
+            <!-- 导航手机 -->
+            <div class="header_sj">
+                <img class="logo_sj" src="images/logo.png" alt="">
+                <a href="#offcanvas-slide" uk-toggle><span class="uk-margin-small-right"
+                        uk-icon="icon: table"></span></a>
+                <div id="offcanvas-slide" uk-offcanvas>
+                    <div class="uk-offcanvas-bar">
+                        <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+                            <li class="uk-active"><a href="">首页</a></li>
+                            <li class="uk-parent">
+                                <a href="">全部案例</a>
+                                <ul class="uk-nav-sub">
+                                    <li><a href="case.html?1">网站建设</a></li>
+                                    <li><a href="case.html?2">APP/小程序开发</a></li>
+                                    <li><a href="case.html?3">SEM托管</a></li>
+                                    <li><a href="case.html?3">SEO优化</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="business.html">业务服务</a></li>
+                            <li><a href="aboutUs.html">关于我们</a></li>
+                            <li><a href="contact.html">联系我们</a></li>
+                            <li><a href="news.html">新闻中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="headerBox_nav">
+                <div class="logoBox">
+                    <img class="logo" src="images/logo.png" alt="">
+                </div>
+                <div class="uk-position-relative uk-visible@s uk-visible@m">
+                    <div class="uk-position-top">
+                        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                            <div class="uk-navbar-center">
+                                <ul class="uk-navbar-nav">
+                                    <li class="uk-active"><a href="">首页</a></li>
+                                    <li>
+                                        <a href="">全部案例</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li><a href="case.html?1">网站建设</a></li>
+                                                <li><a href="case.html?2">APP/小程序开发</a></li>
+                                                <li><a href="case.html?3">SEM托管</a></li>
+                                                <li><a href="case.html?4">SEO优化</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="business.html">业务服务</a></li>
+                                    <li><a href="aboutUs.html">关于我们</a></li>
+                                    <li><a href="contact.html">联系我们</a></li>
+                                    <li><a href="news.html">新闻中心</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 轮播图 -->
+            <div class="wheelPlanting uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+                uk-slideshow="autoplay: true;">
+
+                <ul class="uk-slideshow-items" uk-height-viewport>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse"
+                            uk-slideshow-parallax="scale: 1.2,1.2,1">
+                            <img src="images/1_lb1.jpg" alt="" uk-cover>
+                            <div class="wheelPlanting_box uk-position-center uk-position-small uk-text-center uk-light">
+                                <span>WEBSITE BUILDING</span>
+                                <h1>专注于品牌网站建设</h1>
+                                <p>致力为客户提供一站式网站建设核心服务</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse"
+                            uk-slideshow-parallax="scale: 1.2,1.2,1">
+                            <img src="images/1_lb2.jpg" alt="" uk-cover>
+                            <div class="wheelPlanting_box uk-position-center uk-position-small uk-text-center uk-light">
+                                <span>WEBSITE BUILDING</span>
+                                <h1>专注于品牌网站建设</h1>
+                                <p>致力为客户提供一站式网站建设核心服务</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse"
+                            uk-slideshow-parallax="scale: 1.2,1.2,1">
+                            <img src="images/1_lb3.jpg" alt="" uk-cover>
+                            <div class="wheelPlanting_box uk-position-center uk-position-small uk-text-center uk-light">
+                                <span class="color_0">WEBSITE BUILDING</span>
+                                <h1 class="color_0">专注于品牌网站建设</h1>
+                                <p class="color_0">致力为客户提供一站式网站建设核心服务</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                    uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#"
+                    uk-slidenav-next uk-slideshow-item="next"></a>
+
+            </div>
+        </div>
+
+        <!-- 优势 -->
+        <div
+            class="advantage container uk-flex uk-flex-center uk-width-1-1@s uk-child-width-1-4@xl  uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1@s">
+            <div class="advantage-box">
+                <div class="advantage-item">
+                    <div class="advantage-title">市场招生</div>
+                    <p class="advantage-introduce">丰富招生营销活动<br>助力招生量<span>200%</span></p>
+                    <img class="advantage-img" src="./images/advantage_1.png" alt="">
+                    <p class="advantage-txt">校徽秀</p>
+                </div>
+            </div>
+            <div class="advantage-box">
+                <div class="advantage-item">
+                    <div class="advantage-title">市场招生</div>
+                    <p class="advantage-introduce">丰富招生营销活动<br>助力招生量<span>200%</span></p>
+                    <img class="advantage-img" src="./images/advantage_1.png" alt="">
+                    <p class="advantage-txt">校徽秀</p>
+                </div>
+            </div>
+            <div class="advantage-box">
+                <div class="advantage-item">
+                    <div class="advantage-title">市场招生</div>
+                    <p class="advantage-introduce">丰富招生营销活动<br>助力招生量<span>200%</span></p>
+                    <img class="advantage-img" src="./images/advantage_1.png" alt="">
+                    <p class="advantage-txt">校徽秀</p>
+                </div>
+            </div>
+            <div class="advantage-box">
+                <div class="advantage-item">
+                    <div class="advantage-title">市场招生</div>
+                    <p class="advantage-introduce">丰富招生营销活动<br>助力招生量<span>200%</span></p>
+                    <img class="advantage-img" src="./images/advantage_1.png" alt="">
+                    <p class="advantage-txt">校徽秀</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 信息 -->
+        <div class="news container uk-width-1-1@s uk-child-width-1-2@m uk-child-width-1-1@s">
+            <div class="news-left">
+                <div class="news-left-box uk-width-1-1@s">
+                    <img class="news-img" src="./images/2658584198,1109809066.jpg" alt="">
+                    <p class="news-mess uk-visible@s">用心服务每一位顾客，用心做好每一处细节。<br>------创始人寄语</p>
+                    <p class="news-mess-s uk-hidden@s">用心服务每一位顾客，用心做好每一处细节。<br>------创始人寄语</p>
+                </div>
+            </div>
+            <div class="news-right">
+                <span class="new-number">01——ABOUT US</span>
+                <p class="news-title">企业培训服务专家</p>
+                <p class="news-txt">
+                    回公司返回结果收到复核结果都是福建高速党和国家sad公司借款的风格灰色空间电饭锅和思考假道伐虢灰色空间电饭锅和数据库的规范化科技是的法规和时间大概会涉及到更换会计师对方过后，阿斯顿福建还是得更加深刻较高的哈吉斯的空格，阿萨德刚看见爱上的国家山东国际卡后视镜。
+                </p>
+                <div class="news-btn">LEARN MORE</div>
+            </div>
+        </div>
+
+        <!-- 管理问题 -->
+        <div class="question container uk-width-1-1@s">
+            <p class="question-title container-title">校管家正在为教培训机构解决经营管理问题</p>
+            <div class="question-nav">
+                <div class="question-nav-item question-nav-actived">
+                    <img src="./images/a1_282972921.png" alt="">
+                    <span>招生引流</span>
+                </div>
+                <div class="question-nav-item">
+                    <img src="./images/a2_282976765.png" alt="">
+                    <span>资金监管</span>
+                </div>
+                <div class="question-nav-item">
+                    <img src="./images/a3_282978625.png" alt="">
+                    <span>资源利用</span>
+                </div>
+                <div class="question-nav-item">
+                    <img src="./images/a5_282986671.png" alt="">
+                    <span>工作考核</span>
+                </div>
+                <div class="question-nav-item">
+                    <img src="./images/a6_282992406.png" alt="">
+                    <span>决策分析</span>
+                </div>
+            </div>
+            <div class="question-carousel">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+                    <ul class="question-mess uk-slideshow-items">
+                        <li>
+                            <div class="question-mess-img">
+                                <img src="./images/money.png" alt="">
+                            </div>
+                            <div class="question-carousel-box">
+                                <div class="question-carousel-title">
+                                    <img src="./images/a2_282976765.png" alt="">
+                                    <span>资金监管漏洞大</span>
+                                </div>
+                                <div class="question-carousel-mess">
+                                    <p>支持多种支付方式，线上系统自动对账；</p>
+                                    <p>月结锁定、冲销、分账，规范管理规避漏洞。</p>
+                                </div>
+                                <div class="question-carousel-btn">
+                                    <div class="question-btn question-video-btn">产品视频</div>
+                                    <div class="question-btn question-use-btn">免费试用</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
+                        uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                        uk-slideshow-item="next"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 课程板块 -->
+        <div class="course container uk-width-1-1@s">
+            <p class="course-title container-title">校宝学院六大课程板块</p>
+            <div class="course-cards">
+                <div class="course-item">
+                    <div class="course-item-left">
+                        <img src="./images/xbxy-item1_289061140.png" alt="">
+                    </div>
+                    <div class="course-item-right">
+                        <p>市场招生</p>
+                        <span>招生活动、推广话术、成长技巧、客户需求分析等</span>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-item-left">
+                        <img src="./images/xbxy-item1_289061140.png" alt="">
+                    </div>
+                    <div class="course-item-right">
+                        <p>市场招生</p>
+                        <span>招生活动、推广话术、成长技巧、客户需求分析等</span>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-item-left">
+                        <img src="./images/xbxy-item1_289061140.png" alt="">
+                    </div>
+                    <div class="course-item-right">
+                        <p>市场招生</p>
+                        <span>招生活动、推广话术、成长技巧、客户需求分析等</span>
+                    </div>
+                </div>
+                <div class="course-item">
+                    <div class="course-item-left">
+                        <img src="./images/xbxy-item1_289061140.png" alt="">
+                    </div>
+                    <div class="course-item-right">
+                        <p>市场招生</p>
+                        <span>招生活动、推广话术、成长技巧、客户需求分析等</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 服务 -->
+        <div class="service container">
+            <p class="service-title container-title">专业团队打造多样化支持服务</p>
+            <div class="service-cards">
+                <div class="service-item">
+                    <div class="service-item-title">客户成功服务</div>
+                    <p class="service-item-mess">标准化服务数据库大国化技术的，爱神的箭干哈手机打开规划师，阿萨德刚开哈师大</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-item-title">客户成功服务</div>
+                    <p class="service-item-mess">标准化服务数据库大国化技术的，爱神的箭干哈手机打开规划师，阿萨德刚开哈师大</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 客户 -->
+        <div class="customer container">
+            <p class="customer-number">04 —— STUDENT FEEDBACK</p>
+            <p class="service-title container-title">客户满意是我们的动力</p>
+            <div class="customer-cards">
+                <div class="customer-item">
+                    <img class="customer-header" src="./images/1_avatar1.png" alt="">
+                    <div class="customer-mess uk-flex uk-flex-middle">
+                        <img src="./images/marks.png" alt="">
+                        <div class="customer-mess-box">
+                            <p>谢经理</p>
+                            <span>渠道销售总监</span>
+                        </div>
+                    </div>
+                    <p class="customer-txt">四大皆空发哈水电费，萨迪克gas打个卡就是打个卡十多个，收到货刚卡死的光华会计师更多哈三季度。</p>
+                </div>
+                <div class="customer-item">
+                    <img class="customer-header" src="./images/1_avatar1.png" alt="">
+                    <div class="customer-mess uk-flex uk-flex-middle">
+                        <img src="./images/marks.png" alt="">
+                        <div class="customer-mess-box">
+                            <p>谢经理</p>
+                            <span>渠道销售总监</span>
+                        </div>
+                    </div>
+                    <p class="customer-txt">四大皆空发哈水电费，萨迪克gas打个卡就是打个卡十多个，收到货刚卡死的光华会计师更多哈三季度。</p>
+                </div>
+                <div class="customer-item">
+                    <img class="customer-header" src="./images/1_avatar1.png" alt="">
+                    <div class="customer-mess uk-flex uk-flex-middle">
+                        <img src="./images/marks.png" alt="">
+                        <div class="customer-mess-box">
+                            <p>谢经理</p>
+                            <span>渠道销售总监</span>
+                        </div>
+                    </div>
+                    <p class="customer-txt">四大皆空发哈水电费，萨迪克gas打个卡就是打个卡十多个，收到货刚卡死的光华会计师更多哈三季度。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 合作企业 -->
+        <div class="cooperation container">
+            <p class="cooperation-title">合作企业</p>
+            <p class="cooperation-title-en">COOPERATIVE ENTERPRISE</p>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"  uk-slideshow="max-height: 120;">
+                <ul class="uk-slideshow-items cooperation-carousel">
+                    <li class="cooperation-item">
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                    </li>
+                    <li class="cooperation-item">
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                        <div class="cooperation-item-box">
+                            <img src="./images/enterprise_01.png" alt="">
+                        </div>
+                    </li>
+                </ul>
+            
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+        </div>
+
+        <!-- 手机号 -->
+        <div class="phone container">
+            <p class="phone-title container-title">办好学 用校管家</p>
+
+            <div class="phone-form">
+                <div class="phone-group">
+                    <input type="number"  placeholder="输入手机号，即刻开始">
+                    <p>免费试用</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 底部信息 -->
+        <div class="footerBox">
+            <div class="box">
+                <div
+                    class="footer_content uk-clearfix uk-child-width-1-4@xl uk-child-width-1-4@l uk-child-width-1-4@m uk-child-width-1-1@s">
+                    <div class="footer_item">
+                        <img src="images/logo.png" alt="">
+                    </div>
+                    <div class="footer_item">
+                        <div>
+                            <span>电话：028-01000000</span>
+                            <p>邮箱：support@baidu.com</p>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <div>
+                            <span>传真：028-01001010</span>
+                            <p>地址：北京市高新区天府大道200号</p>
+                        </div>
+                    </div>
+                    <div class="code footer_item">
+                        <div>
+                            <img src="images/ewm.png" alt="">
+                            <p>关注微信公众号</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="color: #aaa;">蜀ICP 00000000号 技术支持：建站公司</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

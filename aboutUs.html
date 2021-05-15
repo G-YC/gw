@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我们</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .function {
+            margin: 80px auto;
+        }
+
+        .function-cards {
+            margin-top: 50px;
+        }
+
+        .function-box {
+            display: flex;
+            width: 1200px;
+            padding: 30px 0;
+            margin: 0 auto;
+        }
+
+        .function-box>div {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .function-item:nth-child(2n) {
+            background: #f6f6f6;
+        }
+
+        .function-item:nth-child(2n) .function-box {
+            flex-direction: row-reverse;
+        }
+
+        .function-item:nth-child(2n-1) .function-item-right,
+        .function-item:nth-child(2n) .function-item-left {
+            padding-left: 30px;
+        }
+
+        .function-item:nth-child(2n-1) .function-item-left,
+        .function-item:nth-child(2n) .function-item-right {
+            padding-right: 30px;
+        }
+
+        .function-item-right .function-list-title {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .function-list-item {
+            margin-top: 40px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .function-list-item:first-child {
+            color: #39b969;
+        }
+
+        .function-list-item>img {
+            width: 35px;
+            height: 35px;
+            margin-right: 20px;
+        }
+
+        .function-mess span {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .function {
+                margin: 0;
+            }
+
+            .function-cards {
+                margin-top: 0;
+            }
+            .function-item{
+                padding: 0 30px;
+            }
+
+            .function-box {
+                flex-wrap: wrap;
+            }
+
+            .function-box>div {
+                width: 100%;
+                padding: 0 !important;
+            }
+            .function-item-right{
+                margin-top: 30px;
+            }
+            .function-list-item{
+                margin-top: 15px;
+            }
+            .code{
+                width: 100% !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 顶部，导航 -->
+    <header class="headerBox">
+        <!-- 导航手机 -->
+        <div class="header_sj">
+            <img class="logo_sj" src="images/logo.png" alt="">
+            <a href="#offcanvas-slide" uk-toggle><span class="uk-margin-small-right" uk-icon="icon: table"></span></a>
+            <div id="offcanvas-slide" uk-offcanvas>
+                <div class="uk-offcanvas-bar">
+                    <ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+                        <li><a href="index.html">首页</a></li>
+                        <li class="uk-parent">
+                            <a href="">全部案例</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="case.html?1">网站建设</a></li>
+                                <li><a href="case.html?2">APP/小程序开发</a></li>
+                                <li><a href="case.html?3">SEM托管</a></li>
+                                <li><a href="case.html?4">SEO优化</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="business.html">业务服务</a></li>
+                        <li class="uk-active"><a href="">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="news.html">新闻中心</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!-- 导航 -->
+        <div class="headerBox_nav">
+            <div class="logoBox">
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+            <div class="uk-position-relative uk-visible@s uk-visible@m">
+                <div class="uk-position-top">
+                    <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+                        <div class="uk-navbar-center">
+                            <ul class="uk-navbar-nav">
+                                <li><a href="index.html">首页</a></li>
+                                <li>
+                                    <a href="">全部案例</a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li><a href="case.html?1">网站建设</a></li>
+                                            <li><a href="case.html?2">APP/小程序开发</a></li>
+                                            <li><a href="case.html?3">SEM托管</a></li>
+                                            <li><a href="case.html?4">SEO优化</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="business.html">业务服务</a></li>
+                                <li class="uk-active"><a href="">关于我们</a></li>
+                                <li><a href="contact.html">联系我们</a></li>
+                                <li><a href="news.html">新闻中心</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="headerBox_nav_btn">
+                <a href="1">立即咨询</a>
+            </div>
+        </div>
+
+        <div class="header_img uk-height uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light"
+            data-src="images/1_lb1.jpg" uk-img>
+            <!-- <div class="tc">
+                <h1>关于我们</h1>
+                <p>About Us</p>
+            </div> -->
+        </div>
+    </header>
+
+
+    <section>
+        <div class="function uk-width-1-1@s">
+            <div class="function-cards">
+                <div class="function-item">
+                    <div class="function-box uk-width-1-1@s">
+                        <div class="function-item-left">
+                            <img src="./images/functin_01.png" alt="">
+                        </div>
+                        <div class="function-item-right">
+                            <p class="function-list-title">360°沟通</p>
+                            <div class="function-list">
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="function-item">
+                    <div class="function-box uk-width-1-1@s">
+                        <div class="function-item-left">
+                            <img src="./images/functin_01.png" alt="">
+                        </div>
+                        <div class="function-item-right">
+                            <p class="function-list-title">360°沟通</p>
+                            <div class="function-list">
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="function-item">
+                    <div class="function-box uk-width-1-1@s">
+                        <div class="function-item-left">
+                            <img src="./images/functin_01.png" alt="">
+                        </div>
+                        <div class="function-item-right">
+                            <p class="function-list-title">360°沟通</p>
+                            <div class="function-list">
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                                <div class="function-list-item">
+                                    <img src="./images/icon_01.png" alt="">
+                                    <div class="function-mess">
+                                        <span>商务号码</span>
+                                        <p>代表企业形象，每个员工一个固定号码，无需座机，员工离职不怕客户流失</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部信息 -->
+    <footer class="footerBox">
+        <div class="box">
+            <div
+                class="footer_content uk-clearfix uk-child-width-1-5@xl uk-child-width-1-5@l uk-child-width-1-5@m uk-child-width-1-1@s">
+                <div class="footer_item">
+                    <div>
+                        <p class="footer_item_first">产品</p>
+                        <p>校管家智校</p>
+                        <p>校管家云校</p>
+                        <p>小竹通</p>
+                        <p>校管家云课</p>
+                        <p>全日智</p>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div>
+                        <p class="footer_item_first">公司</p>
+                        <p>公司概况</p>
+                        <p>发展历程</p>
+                        <p>新闻动态</p>
+                        <p>加入我们</p>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div>
+                        <p class="footer_item_first">联系我们</p>
+                        <p>电话：400-800-5291（我爱教育）</p>
+                        <p>售前：166-8080-2020</p>
+                        <p>售后：18390889088/15200895291</p>
+                        <p>商务合作：QQ3457985561</p>
+                        <p>在线客服</p>
+                    </div>
+                </div>
+                <div class="code footer_item">
+                    <div>扫一扫，关注公众号</div>
+                    <div class="uk-flex code-box">
+                        <div>
+                            <p>校管家</p>
+                            <img src="images/ewm.png" alt="">
+                        </div>
+                        <div>
+                            <p>师生信公众号</p>
+                            <img src="images/ewm.png" alt="">
+                        </div>
+                        <div>
+                            <p>校管家手机站</p>
+                            <img src="images/ewm.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

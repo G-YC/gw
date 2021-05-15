@@ -1,0 +1,468 @@
+body {
+    background: #fff;
+}
+
+.more {
+    display: block;
+}
+
+.wheelPlanting .wheelPlanting_box h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.container-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 960px) {
+    .more {
+        display: none;
+    }
+
+    .wheelPlanting .wheelPlanting_box h1 {
+        font-size: 25px;
+    }
+
+    .advantage .advantage-box {
+        padding: 5px 0 !important;
+    }
+
+    .news-img {
+        border-radius: 0 !important;
+    }
+}
+
+
+/* 轮播图 */
+.wheelPlanting .wheelPlanting_box {
+    color: #fff;
+}
+
+.wheelPlanting .wheelPlanting_box .color_0 {
+    color: #000 !important;
+}
+
+.wheelPlanting .wheelPlanting_box span {
+    font-size: 16px;
+}
+
+.wheelPlanting .wheelPlanting_box p {
+    font-size: 18px;
+}
+
+/* 优势 */
+.advantage {
+    margin: 50px auto;
+    flex-wrap: wrap;
+    background-color: #fbfbfb;
+}
+
+.advantage .advantage-box {
+    padding: 20px 25px;
+}
+
+.advantage-item {
+    text-align: center;
+    background: #fff;
+    color: #666;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    padding: 25px 40px;
+    border-radius: 5px;
+}
+
+.advantage-item .advantage-title {
+    font-size: 24px;
+}
+
+.advantage-item .advantage-introduce {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.advantage-item .advantage-introduce span {
+    color: #a56cff;
+}
+
+.advantage-item .advantage-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.advantage-item .advantage-txt {
+    font-size: 24px;
+}
+
+/* 信息 */
+.news {
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-left {}
+
+.news-left-box {
+    width: 400px;
+    position: relative;
+}
+
+.news-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.news-mess {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    line-height: 30px;
+    bottom: -40px;
+    right: -60px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #999;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 10px rgb(0 0 0 / 8%);
+    font-size: 14px;
+}
+
+.news-mess-s {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 30px;
+    text-align: right;
+    background-color: rgb(0 0 0 / 50%);
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.news-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.new-number {
+    font-size: 16px;
+    color: #999;
+}
+
+.news-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.news-txt {
+    font-size: 16px;
+    color: #777;
+    margin: 60px 0;
+    line-height: 30px;
+}
+
+.news-btn {
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2b9fe8;
+    width: 150px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 管理问题 */
+.question {
+    margin: 150px auto;
+}
+
+.question-nav {
+    display: flex;
+    border-bottom: 1px solid #f6f9fc;
+}
+
+.question-nav-item {
+    opacity: 0.6;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.question-nav-item.question-nav-actived {
+    opacity: 1;
+    position: relative;
+}
+
+.question-nav-actived::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    height: 2px;
+    background-color: #2b9fe8;
+}
+
+.question-nav-item img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.question-nav-item span {
+    font-size: 16px;
+}
+
+.question-carousel {}
+
+.question-mess li {
+    display: flex;
+}
+
+.question-mess .question-mess-img {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    float: left;
+}
+
+.question-mess .question-mess-img img {
+    width: 100%;
+}
+
+.question-carousel-box {
+    flex: 1;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    float: left;
+    padding-left: 20px;
+}
+
+.question-carousel-title {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.question-carousel-title img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.question-carousel-mess {
+    line-height: 30px;
+    margin: 20px 0 50px;
+}
+
+.question-carousel-btn {
+    display: flex;
+}
+
+.question-carousel-btn .question-btn {
+    width: 100px;
+    line-height: 36px;
+    text-align: center;
+    margin-right: 30px;
+    border-radius: 36px;
+    cursor: pointer;
+}
+
+.question-video-btn {
+    color: #fff;
+    background-color: #2b9fe8;
+}
+
+.question-use-btn {
+    color: #2b9fe8;
+    border: 1px solid #2b9fe8;
+}
+
+/* 课程板块 */
+.course {
+    margin: 0 auto;
+}
+
+.course-cards {
+    margin-top: 50px;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-item>div {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.course-cards>:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.course-item-right p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 服务 */
+.service {
+    margin: 120px auto;
+}
+
+.service-cards {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    display: flex;
+    width: 550px;
+    height: 180px;
+    border-radius: 5px;
+    background-color: #a4d9ff;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+
+.service-item .service-item-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* 客户 */
+.customer {
+    margin: 0 auto;
+}
+
+.customer-number {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+}
+.customer-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.customer-item {
+    position: relative;
+    padding: 90px 50px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 10px rgb(0 0 0 / 8%);
+    color: #999;
+    width: 260px;
+}
+.customer-header{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50px;
+}
+.customer-mess>img{
+    width: 50px;
+    margin-right: 20px;
+}
+.customer-mess-box p{
+    color: #333;
+    margin-bottom: 5px;
+}
+.customer-mess-box span{
+    font-size: 14px;
+}
+.customer-txt{
+    margin-top: 30px;
+}
+
+/* 合作企业 */
+.cooperation{
+    margin: 100px auto;
+}
+.cooperation-title{
+    text-align: center;
+    font-size: 32px;
+    color: #304c8d;
+}
+.cooperation-title-en{
+    font-size: 12px;
+    color: #bbb;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.cooperation-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.cooperation-item-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #f2f6f7;
+}
+.cooperation-item-box img{
+    width: 100px;
+    height: fit-content;
+}
+
+/* 手机号 */
+.phone{
+    margin: 80px auto;
+}
+.phone-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone-group{
+    height: 40px;
+    border:1px solid #efefef;
+    box-shadow: 0 5px 15px 10px rgb(0 0 0 / 8%);
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.phone-group input{
+    width: 200px;
+    padding: 0 15px;
+    border: 0;
+    height: 100%;
+    outline: none;
+}
+.phone-group p{
+    color: #fff;
+    line-height: 40px;
+    width: 100px;
+    border-radius: 40px;
+    text-align: center;
+    background-color: #0f93ff;
+}
